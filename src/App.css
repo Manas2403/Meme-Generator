@@ -1,38 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap");
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  display: flex;
+  gap: 12px;
+  padding: 1rem 1rem;
+  background: linear-gradient(to left, #672280, #a626d3);
+  height: 65px;
+  align-items: center;
+  font-family: "Merriweather", serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav img {
+  height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.input-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.input-fields input {
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+  font-family: "Merriweather", serif;
+  height: 50px;
+  width: 300px;
+  font-weight: 500;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap-reverse;
+}
+.btn {
+  border-radius: 5px;
+  color: white;
+  font-family: "Merriweather", serif;
+  background: linear-gradient(90deg, #672280, #a626d3);
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.btn-icon {
+  width: 24px;
+}
+.meme-container {
+  max-width: 100%;
+  position: relative;
+}
+.meme-container img {
+  width: 100%;
+  height: 100%;
+}
+.top-text {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  position: absolute;
+  left: 40%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-text {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  color: white;
 }
